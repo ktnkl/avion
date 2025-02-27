@@ -1,0 +1,25 @@
+:root {
+  font-size: 62.5%;
+}
+
+%container-mobile {
+  padding-inline: 2.6rem;
+}
+
+%container-desktop {
+  padding-inline: 8rem;
+}
+$padding-inline-desktop: 8rem;
+$padding-inline-mobile: 2.6rem;
+$col-gap-mob: 15px;
+$col-gap-desktop: 20px;
+
+$col: calc((100vw - (2 * #{$padding-inline-desktop}) - (11 * #{$col-gap-desktop})) / 12);
+
+$col-2: calc(#{$col} * 2 + #{$col-gap-desktop});
+
+$col-3: calc(#{$col} * 3 + #{$col-gap-desktop} * 2);
+
+$col-4: calc(#{col} * 4 + #{$col-gap-desktop} * 3);
+
+$col-6: calc(#{$col} * 6 + #{$col-gap-desktop} * 5)

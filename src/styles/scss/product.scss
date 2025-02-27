@@ -1,0 +1,61 @@
+@import "base";
+
+.product-block {
+  padding-top: 50;
+  padding-bottom: 47px;
+  @extend %container-desktop;
+  display: flex;
+  flex-direction: row;
+  column-gap: $col-gap-desktop;
+  &__picture {
+    width: $col-6;
+
+  }
+  &-details {
+    width: $col-6;
+    &__name {
+      font-family: ClashDisplay-Regular;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44.28px;
+      text-align: left;
+      color: #2A254B;
+
+      margin-top: 31px;
+    }
+    &__price {
+      font-family: Satoshi-Regular;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32.4px;
+      text-align: left;
+      color: #2A254B;
+      margin-top: 16px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #EBE8F4;
+    }
+    &-description {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 14px;
+      &__header {
+        font-family: ClashDisplay-Regular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.68px;
+        text-align: left;
+        color: #2A254B;
+      }
+      &__text {
+        font-family: Satoshi-Regular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        color:#2A254B;    
+      }
+    }
+
+  }
+}

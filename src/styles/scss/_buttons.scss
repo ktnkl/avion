@@ -1,0 +1,87 @@
+@import "fonts";
+
+%btn_medium_white {
+  width: 111px;
+  top: 20px;
+  left: 20px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: #fff;
+  @extend %bm;
+  &:hover {
+    background-color: #F9F9F9;
+  }
+  &:focus {
+    background-color: #fff;
+    border: #4E4D93 solid 2px;
+  }
+  &:disabled {
+    opacity: 50%;
+  }
+}
+
+%btn_medium_secondary {
+  width: 111px;
+  top: 20px;
+  left: 20px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: #F9F9F9;
+  @extend %bm;
+  &:hover {
+    background-color: #EBE8F4;
+  }
+  &:focus {
+    background-color: #F9F9F9;
+    border: #4E4D93 solid 2px;
+  }
+  &:disabled {
+    opacity: 50%;
+  }
+}
+
+%btn_medium_primary {
+  width: 111px;
+  height: 56px;
+  top: 20px;
+  left: 20px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: #2A254B;
+  @extend %bm;
+  &:hover {
+    background-color: #1E193E;
+  }
+  &:focus {
+    background-color: #2A254B;
+    border: #4E4D93 solid 2px;
+  }
+  &:disabled {
+    opacity: 50%;
+  }
+}
+
+%btn_medium_opaque {
+  width: 111px;
+  top: 20px;
+  left: 20px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  opacity: 0px;
+  background-color: rgba(249, 249, 249, 0.15);
+  color: #fff;
+  @extend %bm;
+  &:hover {
+    background-color: rgba(249, 249, 249, 0.3);
+  }
+  &:focus {
+    background-color: rgba(249, 249, 249, 0.3);
+    border: #4E4D93 solid 2px;
+  }
+  &:disabled {
+    opacity: 50%;
+  }
+}
