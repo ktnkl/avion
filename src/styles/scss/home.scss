@@ -1,17 +1,21 @@
 @import "base";
 
 .hero-block {
-  background-image: url(../../images/home/hero-block/fa9b27255272d76e665cce4314b4aedb.jfif);
-  height: 100vh;
-  background-size:cover;
-  background-repeat: no-repeat;
-  padding: 130px;
-  padding-left: 50%;
-  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  &__img {
+    background-image: url(../../images/home/hero-block/fa9b27255272d76e665cce4314b4aedb.jfif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    aspect-ratio: 1;
+  }
   &-text {
     background-color: #fff;
-    padding: 48px;
-    padding-inline: 56px;
+    padding: 47px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
     &__header {
       @extend %h2;
       margin-bottom: 20px;
@@ -23,6 +27,8 @@
     }
     &__link {
       @extend %btn_medium_secondary;
+      align-self: center;
+      width: fit-content;
     }
   }
 }
@@ -39,8 +45,8 @@
   }
   &-card-wrapper {
     display: flex;
-    flex-direction: row;
-    column-gap: 20px;
+    flex-direction: column;
+    row-gap: 25px;
     justify-content: center;
     &-item {
       @extend %features-card;
@@ -207,7 +213,54 @@
   
   /* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше) */
   @media (min-width: 992px) {
-    /* Стили для устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+    .hero-block {
+      background-image: url(../../images/home/hero-block/fa9b27255272d76e665cce4314b4aedb.jfif);
+      height: 100vh;
+      background-size:cover;
+      background-repeat: no-repeat;
+      padding: 130px;
+      padding-left: 50%;
+      padding-right: 80px;
+      &__img {
+        display: none;
+      }
+      &-text {
+        background-color: #fff;
+        padding: 48px;
+        padding-inline: 56px;
+        &__header {
+          
+        }
+        &__bottom {
+          
+        }
+        &__link {
+        }
+      }
+    }
+
+    .features-first-block {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      &__title {
+       
+        margin-bottom: 36px;
+      }
+      &-card-wrapper {
+       
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+        &-item {
+      
+          
+          &__title {
+            
+          }
+          
+        }
+      }
+    }
   }
   
   /* Устройства с большим экраном (компьютеры, 1200px и выше) */

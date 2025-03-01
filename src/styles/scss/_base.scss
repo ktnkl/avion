@@ -54,10 +54,7 @@ button {
     }
   }
   &-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 44px;
+    display: none;
     padding: 20px;
     &__category {
       color: #726E8D;
@@ -171,6 +168,17 @@ button {
       &__item {
         padding: 12px;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 44px;
     }
   }
 }

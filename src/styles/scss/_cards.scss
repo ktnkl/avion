@@ -2,7 +2,7 @@
 @import "grid";
 
 %features-card {
-  width: $col-3;
+  width: $col-mob-4;
   
   top: 1048px;
   left: 2860px;
@@ -50,6 +50,19 @@
     height: 471px;
     gap: 24.31px;
     opacity: 0px;
+  }
+}
+
+@media (min-width: 998px) {
+  %features-card {
+    width: $col-3;
+    
+    padding: 48px;
+    gap: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
   }
 }
 

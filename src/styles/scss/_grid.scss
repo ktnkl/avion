@@ -16,10 +16,18 @@ $col-gap-desktop: 20px;
 
 $col: calc((100vw - (2 * #{$padding-inline-desktop}) - (11 * #{$col-gap-desktop})) / 12);
 
+$col-mob: calc((100vw - (2 * #{$padding-inline-desktop}) - (3 * #{$col-gap-mob})) / 4);
+
 $col-2: calc(#{$col} * 2 + #{$col-gap-desktop});
 
 $col-3: calc(#{$col} * 3 + #{$col-gap-desktop} * 2);
 
 $col-4: calc(#{col} * 4 + #{$col-gap-desktop} * 3);
 
-$col-6: calc(#{$col} * 6 + #{$col-gap-desktop} * 5)
+$col-6: calc(#{$col} * 6 + #{$col-gap-desktop} * 5);
+
+
+$col-mob-2: calc(#{$col-mob} * 2 + #{$col-gap-mob});
+
+$col-mob-4: calc(#{col-mob} * 4 + #{$col-gap-mob} * 3);
+
